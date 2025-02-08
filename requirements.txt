@@ -1,0 +1,15 @@
+fastapi
+pydantic
+uvicorn[standard]
+langchain
+qdrant-client
+transformers
+sentence-transformers
+python-dotenv
+numpy
+pandas
+huggingface_hub
+openai
+pdfminer.six
+pdfminer.six[layout]
+pdf2image
