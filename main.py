@@ -1,11 +1,9 @@
-# backend/app/main.py
 from fastapi import FastAPI
-from app.api import chat
+from app.routes.chat import chat_router
 
-app = FastAPI(title="Chat App with AI Agent")
+app = FastAPI()
+app.include_router(chat_router, prefix="/api/chat")
 
-app.include_router(chat.router, prefix="/api/chat")
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
+@app.get("/")
+def read_root():
+    return {"status": "Chat API running"}
