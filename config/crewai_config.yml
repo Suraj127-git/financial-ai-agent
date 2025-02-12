@@ -1,0 +1,41 @@
+agents:
+  history_agent:
+    role: "Chat History Manager"
+    goal: "Manage chat history interactions and retrieval"
+    backstory: "Specialized in efficiently managing and retrieving financial chat history"
+    verbose: true
+
+  finance_agent:
+    role: "Financial Loan Expert"
+    goal: "Provide accurate loan-related information using financial data"
+    backstory: "Expert in loan processing, financial regulations, and customer support"
+    verbose: true
+
+tasks:
+  history_search:
+    agent: "history_agent"
+    description: "Search history for: '{message}' and return existing answer if found"
+    expected_output: "Existing answer from chat history or None if not found"
+
+  history_store:
+    agent: "history_agent"
+    description: "Store the question and answer in chat history"
+    expected_output: "Confirmation of storage"
+
+  llm_response:
+    agent: "finance_agent"
+    description: |
+      Generate detailed response for: '{message}' using:
+      - User's financial data from vector DB
+      - Loan application guidelines
+      - Financial regulations
+    expected_output: "A comprehensive, accurate financial response"
+
+  fallback_response:
+    agent: "finance_agent"
+    description: |
+      If unable to answer '{message}', provide helpful alternatives:
+      - Request clarification
+      - Suggest related financial services
+      - Offer general loan advice
+    expected_output: "A helpful fallback response when exact answer isn't available"

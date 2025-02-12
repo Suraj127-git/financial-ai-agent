@@ -10,6 +10,8 @@ numpy
 pandas
 huggingface_hub
 openai
-pdfminer.six
-pdfminer.six[layout]
-pdf2image
+# pdfminer.six
+# pdfminer.six[layout]
+# pdf2image
+crewai
+fluent-logger
