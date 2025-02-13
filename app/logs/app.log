@@ -1,0 +1,11 @@
+{"time": "2025-02-13T07:55:00", "level": "CRITICAL", "message": "Test critical log"}
+{"level": "INFO", "message": "Health check endpoint hit"}
+{"level": "ERROR", "message": "Health check endpoint hit with error"}
+{"level": "CRITICAL", "message": "Test log entry in critical mode"}
+{"time": "2025-02-13T07:55:00", "level": "CRITICAL", "message": "Test critical log"}
+{"time": "2025-02-13T07:55:00", "level": "CRITICAL", "message": "Test critical log"}
+{"level": "INFO", "message": "Health check endpoint hit"}
+{"level": "ERROR", "message": "Health check endpoint hit with error"}
+{"level": "CRITICAL", "message": "Test log entry in critical mode"}
+{"level": "WARNING", "message": "Test log entry in warning mode"}
+{"level": "INFO", "message": "Health check endpoint hit"}{"level": "INFO", "message": "3 changes detected"}

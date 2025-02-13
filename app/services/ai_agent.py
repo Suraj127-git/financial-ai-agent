@@ -1,5 +1,5 @@
 from crewai import Agent, Task, Process
-from langchain.llms import HuggingFaceHub
+from langchain_community.llms import HuggingFaceHub
 from services.vector_db import store_interaction, search_chat_history
 from config.settings import settings
 from typing import Optional

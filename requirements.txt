@@ -2,16 +2,12 @@ fastapi
 pydantic
 uvicorn[standard]
 langchain
+langchain-community
 qdrant-client
 transformers
-sentence-transformers
 python-dotenv
 numpy
 pandas
 huggingface_hub
 openai
-# pdfminer.six
-# pdfminer.six[layout]
-# pdf2image
 crewai
-fluent-logger
